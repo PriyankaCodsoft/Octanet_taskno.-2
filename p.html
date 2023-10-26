@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TO DO LIST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:gray
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6600;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        .form-field {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        select  {
+            width: 16%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        input[type="reset"],
+        select  {
+            width: 16%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+      
+    </style>
+</head>
+<body>
+    <form action="add-restaurant" method="post" class="form">
+        <h1>Add a Restaurant</h1>
+
+        <section>
+            <h2>Basic Information</h2>
+            <div class="form-field">
+                <label for="restaurant">Restaurant Name</label>
+                <input type="text" name="restaurant" id="restaurant" >
+            </div>
+
+            <div class="form-city">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+            </div>
+       </section>
+    <section>
+            <h2>Location</h2>
+            <div class="form-field">
+                <label for="address">Address/Landmark</label>
+                <input type="text" name="address" id="address">
+            </div>
+        <div class="form-field">
+                <label for="alcohol">Alcohol</label>
+                <select name="alcohol" id="alcohol">
+                    <option value="select">Select</option>
+                    <option value="yes">Serves Alcohol</option>
+                    <option value="no">Doesn't serve alcohol</option>
+                </select>
+            </div>
+        </section>
+        <section>
+            <h2>Services</h2>
+                <label for="breakfast">Breakfast</label>
+                <input type="checkbox" name="services[]" id="breakfast" value="breakfast">
+                <label for="lunch">Lunch</label>
+                <input type="checkbox" name="services[]" id="lunch" value="lunch">
+                <label for="dinner">Dinner</label>
+                <input type="checkbox" name="services[]" id="dinner" value="dinner">
+                <label for="cafe">Cafe</label>
+                <input type="checkbox" name="services[]" id="cafe" value="cafe">
+                <label for="nightlife">Nightlife</label>
+                <input type="checkbox" name="services[]" id="nightlife" value="nightlife">
+            </section>
+            <section>
+                <h2>Seating</h2>
+                    <label for="seating_available">Seating Available</label>
+                    <input type="checkbox" name="seating_available" id="seating_available">
+                    <label for="indoor_seating">Indoor Seating</label>
+                    <input type="checkbox" name="indoor_seating" id="indoor_seating">
+                    <label for="outdoor_seating">Outdoor Seating</label>
+                    <input type="checkbox" name="outdoor_seating" id="outdoor_seating">
+                </section>
+               <section>
+                    <h2>Payment</h2>
+                    <div class="form-payment">
+                        <label for="online">Online</label>
+                        <input type="radio" name="online" id="online">
+                        <label for="cash">Cash</label>
+                        <input type="radio" name="cash" id="cash">
+                        </select>
+                    </div>
+                </section>
+                <section>
+                    <h2>Cuisines</h2>
+                    <select id="form-cuisines" name="form-cuisines">
+                        <option value="select">Select</option>
+                        <option value="italian">Italian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="american">American</option>
+                    </select>
+                    </section>
+               <div class="form-sub">
+                   <input type="submit" value="Submit">
+                   <input type="reset" value="Reset">
+        </div>
+                </section>
+            </form>
+        </body>
+        </html>
+                    
+    
+                
+                    
+           
+    
+            
+
+            
+                
+
+            
+                
+        
+            
+                
+        
